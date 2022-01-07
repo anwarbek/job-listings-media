@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Spartan";
+    src: url("../fonts/Spartan-Medium.woff2") format("woff2"),
+        url("../fonts/Spartan-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("../fonts/Spartan-Bold.woff2") format("woff2"),
+        url("../fonts/Spartan-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,10 +37,10 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Spartan", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #effafa;
   color: #222;
 }
 
@@ -33,7 +53,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1466px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -44,4 +64,143 @@ img {
 /* MAIN_CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+.site-header-bg {
+  width: 100%;
+  max-height: 156px;
+  margin: 0 0 76px;
+}
+.vacancy-wrapper {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 32px 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+}
+.vacancy-wrapper:not(:last-child) {
+  margin: 0 auto 24px;
+}
+.vacancy-wrapper:last-child {
+  margin: 0 auto 120px;
+}
+.vacancy-wrapper-featured {
+  border-left: 5px solid #5ca5a5;
+}
+.vacancy {
+  margin: 0 auto 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+.employer-logo {
+  width: 88px;
+  height: 88px;
+}
+.employer-info {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+}
+.employer-status {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.employer-name {
+  margin: 0 16px 0 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5ca5a5;
+}
+
+.employer-name:last-child {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.employer-status-new {
+  margin: 0 8px 0 0;
+  padding: 6px 8px 4px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  background-color: #5ca5a5;
+}
+.employer-featured {
+  margin: 0;
+  padding: 6px 8px 4px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  background-color: #2b3939;
+}
+.vocancy-title {
+  margin: 0 0 8px;
+
+}
+.vocancy-title-link {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2b3939;
+}
+
+
+.publication-data-contract-types-vacancy-addres {
+  display: flex;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #7c8f8f;
+}
+.publication-data {
+}
+.publication-data-contract-types-vacancy-addres-item {
+  display: flex;
+  align-items: center;
+}
+.publication-data-contract-types-vacancy-addres-item:not(:last-child)::after {
+  content: '';
+  display: block;
+  align-items: center;
+  margin: 0 16px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: #2b3939;
+  background-color: #b7c4c4;
+}
+.contract-types {
+}
+.vacancy-addres {
+}
+.required-technology {
+}
+.required-technology-link {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #5ca5a5;
+  background-color: #5ca5a515;
+}
+.required-technology-link:not(:last-child) {
+  margin: 0 16px 0 0;
+}
+.frontend {
+}
+.senior {
+}
+.html {
+}
+.css {
+}
+.javascript {
 }
